@@ -1,5 +1,6 @@
 package com.qa.calculator;
 
+import static org.junit.Assert.*;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -7,20 +8,20 @@ import com.qa.subtraction.Subtraction;
 
 public class CalculatorTest {
 
-	private Subtraction subtract;
+	private static Subtraction subtraction;
 	
 	@BeforeClass
-	public void setUp() {
-		subtract = new Subtraction();
+	public static void setUp() {
+		subtraction = new Subtraction();
 	}
 
 	@Test
 	public void subtractTest() {
 
-		int expectedResult;
-		int actualResult = Subtraction.subtract();
 		
-		assertEquals(expectedResult, actualResult);
+		int actualResult = subtraction.subtract(9, 4);
+		
+		assertEquals(5, actualResult);
 		
 	}
 
