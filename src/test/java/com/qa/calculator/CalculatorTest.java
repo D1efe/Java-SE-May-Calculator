@@ -14,6 +14,7 @@ public class CalculatorTest {
 	private Subtraction subtraction;
 	private Addition addition;
 	private Multiplication multiplication;
+	private Division division;
 
 	@Before
 	public void setUp() {
@@ -54,6 +55,20 @@ public class CalculatorTest {
 		int actualResult = multiplication.multiply(7, 5);
 
 		assertEquals(35, actualResult);
+
+	}
+	
+	@Before
+	public void divisionSetUp() {
+		division = new Division();
+	}
+
+	@Test
+	public void divisionTest() {
+
+		int actualResult = division.divide(72, 5);
+
+		assertEquals(0, actualResult);
 
 	}
 
