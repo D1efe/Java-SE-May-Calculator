@@ -3,13 +3,15 @@ package com.qa.calculator;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import com.qa.subtraction.Subtraction;
+
 public class CalculatorTest {
 
-	private Calculator calc;
+	private Subtraction subtract;
 	
 	@BeforeClass
 	public void setUp() {
-		calc = new Calculator();
+		subtract = new Subtraction();
 	}
 
 	@Test
