@@ -1,4 +1,4 @@
-package com.qa.subtraction;
+package com.qa.calculations;
 
 public class Subtraction {
 

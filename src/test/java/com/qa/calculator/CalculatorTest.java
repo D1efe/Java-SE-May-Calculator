@@ -3,10 +3,10 @@ package com.qa.calculator;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.qa.subtraction.Subtraction;
+import com.qa.calculations.Addition;
+import com.qa.calculations.Subtraction;
 
 public class CalculatorTest {
 
