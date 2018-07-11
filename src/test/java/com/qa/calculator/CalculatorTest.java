@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.qa.calculations.Addition;
+import com.qa.calculations.Multiplication;
 import com.qa.calculations.Subtraction;
 
 public class CalculatorTest {
@@ -43,16 +44,16 @@ public class CalculatorTest {
 	}
 	
 	@Before
-	public void setUp() {
+	public void multiplySetUp() {
 		multiplication = new Multiplication();
 	}
 
 	@Test
 	public void multiplyTest() {
 
-		int actualResult = Multiplication.multiply(9, 4);
+		int actualResult = multiplication.multiply(7, 5);
 
-		assertEquals(0, actualResult);
+		assertEquals(35, actualResult);
 
 	}
 
