@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.qa.calculations.Addition;
+import com.qa.calculations.Division;
 import com.qa.calculations.Multiplication;
 import com.qa.calculations.Subtraction;
 
@@ -66,9 +67,9 @@ public class CalculatorTest {
 	@Test
 	public void divisionTest() {
 
-		int actualResult = division.divide(72, 5);
+		double actualResult =  division.divide(70, 5);
 
-		assertEquals(0, actualResult);
+		assertEquals(14, actualResult, 0.00);
 
 	}
 
