@@ -12,6 +12,7 @@ public class CalculatorTest {
 
 	private Subtraction subtraction;
 	private Addition addition;
+	private Multiplication multiplication;
 
 	@Before
 	public void setUp() {
@@ -38,6 +39,20 @@ public class CalculatorTest {
 		int actualResult = addition.add(13, 7);
 
 		assertEquals(20, actualResult);
+
+	}
+	
+	@Before
+	public void setUp() {
+		multiplication = new Multiplication();
+	}
+
+	@Test
+	public void multiplyTest() {
+
+		int actualResult = Multiplication.multiply(9, 4);
+
+		assertEquals(0, actualResult);
 
 	}
 
