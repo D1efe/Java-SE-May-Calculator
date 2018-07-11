@@ -1,15 +1,25 @@
 package com.qa.calculator;
 
-import org.junit.Assert;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class CalculatorTest {
 
+	private Calculator calc;
+	
+	@BeforeClass
+	public void setUp() {
+		calc = new Calculator();
+	}
+
 	@Test
-	public void test() {
-		Calculator calc = new Calculator();
-		int actualValue = calc.add(2, 2);
-		Assert.assertEquals(4, actualValue);
+	public void subtractTest() {
+
+		int expectedResult;
+		int actualResult = Subtraction.subtract();
+		
+		assertEquals(expectedResult, actualResult);
+		
 	}
 
 }
